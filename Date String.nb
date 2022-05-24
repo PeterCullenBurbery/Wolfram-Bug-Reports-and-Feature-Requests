@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6971,        183]
+NotebookOptionsPosition[      5665,        154]
+NotebookOutlinePosition[      6073,        170]
+CellTagsIndexPosition[      6030,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DateString", "[", 
+  RowBox[{
+   RowBox[{"DateObject", "[", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Day\>\"", ",", "\"\<Month\>\"", ",", "\"\<Year\>\"", ",", 
+     "\"\<DayName\>\"", ",", "\"\<Time\>\""}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8623885997102127`*^9, 3.862388616726428*^9}},
+ CellLabel->"In[99]:=",ExpressionUUID->"4be91ee1-6dbd-45d2-93e5-16ec28524873"],
+
+Cell[BoxData["\<\"24052022Tuesday09:43:37\"\>"], "Output",
+ CellChangeTimes->{3.8623886170772133`*^9},
+ CellLabel->"Out[99]=",ExpressionUUID->"49dc2774-2581-4fa5-bd28-4a87183cdf6d"]
+}, Open  ]],
+
+Cell["\<\
+I want to add spaces between the elements with a single option instead of \
+manually adding spaces like this\
+\>", "CodeText",
+ CellChangeTimes->{{3.8623886194957314`*^9, 
+  3.862388646021201*^9}},ExpressionUUID->"e0c955ef-63fd-48ab-8b56-\
+bd86e9a16841"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateString", "[", 
+  RowBox[{
+   RowBox[{"DateObject", "[", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Day\>\"", ",", "\"\< \>\"", ",", "\"\<Month\>\"", ",", "\"\< \>\"", 
+     ",", "\"\<Year\>\"", ",", "\"\< \>\"", ",", "\"\<DayName\>\"", ",", 
+     "\"\< \>\"", ",", "\"\<Time\>\""}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8623885997102127`*^9, 3.862388616726428*^9}, {
+  3.8623886474040103`*^9, 3.8623886619861183`*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"5c2f488a-e98b-4c95-90f5-ae5ca6887432"],
+
+Cell[BoxData["\<\"24 05 2022 Tuesday 09:44:22\"\>"], "Output",
+ CellChangeTimes->{3.8623886622679152`*^9},
+ CellLabel->
+  "Out[100]=",ExpressionUUID->"11cb7925-e1bb-4d35-9031-d55ba3697110"]
+}, Open  ]],
+
+Cell["\<\
+I think there is a way to use \[OpenCurlyDoubleQuote]Delimiters\
+\[CloseCurlyDoubleQuote] but I don\[CloseCurlyQuote]t know how to make it work\
+\>", "CodeText",
+ CellChangeTimes->{{3.8623886656799765`*^9, 
+  3.8623886780466275`*^9}},ExpressionUUID->"86a0f9e4-a90c-4cb8-bda1-\
+3afe35f79a15"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateString", "[", 
+  RowBox[{
+   RowBox[{"DateObject", "[", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Day\>\"", ",", "\"\<Month\>\"", ",", "\"\<Year\>\"", ",", 
+     "\"\<DayName\>\"", ",", "\"\<Time\>\""}], "}"}], ",", 
+   RowBox[{"\"\<Delimiters\>\"", "->", "\"\< \>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.862388679603346*^9, 3.862388702513864*^9}},
+ CellLabel->
+  "In[101]:=",ExpressionUUID->"07613f8c-3296-449a-b614-070426401423"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateString", "optx", 
+   "\"Unknown option \\!\\(\\*RowBox[{\\\"\\\\\\\"Delimiters\\\\\\\"\\\"}]\\) \
+in \\!\\(\\*RowBox[{\\\"DateString\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"DateObject\\\", \\\"[\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"2022\\\", \\\",\\\", \\\"5\\\", \\\",\\\", \\\"24\\\", \\\",\\\", \
+\\\"9\\\", \\\",\\\", \\\"45\\\", \\\",\\\", \
+\\\"2.7952136`8.198989984391323\\\"}], \\\"}\\\"}], \\\",\\\", \
+\\\"\\\\\\\"Instant\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Gregorian\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"4.`\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Day\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Month\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Year\\\\\\\"\\\", \\\",\
+\\\", \\\"\\\\\\\"DayName\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Time\\\\\\\"\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Delimiters\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"\\\\\\\" \
+\\\\\\\"\\\"}]}], \\\"]\\\"}]\\).\"", 2, 101, 25, 19415466913278214018, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8623887028022113`*^9},
+ CellLabel->
+  "During evaluation of \
+In[101]:=",ExpressionUUID->"7a9b48f3-3e38-4135-8547-cd600fffe1b2"],
+
+Cell[BoxData[
+ RowBox[{"DateString", "[", 
+  RowBox[{
+   TemplateBox[{
+     RowBox[{"\"Tue 24 May 2022 09:45:02\"", 
+       StyleBox[
+        RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+          StyleBox[
+           RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}],
+         FontColor -> GrayLevel[0.5]]}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           
+           RowBox[{"2022", ",", "5", ",", "24", ",", "9", ",", "45", ",", 
+             "2.7952136`8.198989984391323"}], "}"}], ",", "\"Instant\"", ",", 
+         "\"Gregorian\"", ",", 
+         RowBox[{"-", "4.`"}]}], "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Day\"\>", ",", "\<\"Month\"\>", ",", "\<\"Year\"\>", 
+     ",", "\<\"DayName\"\>", ",", "\<\"Time\"\>"}], "}"}], ",", 
+   RowBox[{"\<\"Delimiters\"\>", "\[Rule]", "\<\" \"\>"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8623887028186855`*^9},
+ CellLabel->
+  "Out[101]=",ExpressionUUID->"e6e3452e-ace8-4ef8-a581-e01c3b764d0d"]
+}, Open  ]],
+
+Cell["\<\
+I\[CloseCurlyQuote]ve tried several other syntax ideas with delimiters in the \
+details of the documentation for DateString and DateFormat and I can\
+\[CloseCurlyQuote]t get it work.\
+\>", "CodeText",
+ CellChangeTimes->{{3.8623887083600674`*^9, 
+  3.8623887383189564`*^9}},ExpressionUUID->"d7296517-8a8c-4fc7-a782-\
+a42af8c0e1d0"]
+},
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{117, Automatic}, {Automatic, 123}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"28b285b0-cb39-4e2d-971a-d7347133d1df"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 414, 9, 28, "Input",ExpressionUUID->"4be91ee1-6dbd-45d2-93e5-16ec28524873"],
+Cell[997, 33, 181, 2, 32, "Output",ExpressionUUID->"49dc2774-2581-4fa5-bd28-4a87183cdf6d"]
+}, Open  ]],
+Cell[1193, 38, 264, 6, 38, "CodeText",ExpressionUUID->"e0c955ef-63fd-48ab-8b56-bd86e9a16841"],
+Cell[CellGroupData[{
+Cell[1482, 48, 549, 12, 28, "Input",ExpressionUUID->"5c2f488a-e98b-4c95-90f5-ae5ca6887432"],
+Cell[2034, 62, 189, 3, 32, "Output",ExpressionUUID->"11cb7925-e1bb-4d35-9031-d55ba3697110"]
+}, Open  ]],
+Cell[2238, 68, 301, 6, 38, "CodeText",ExpressionUUID->"86a0f9e4-a90c-4cb8-bda1-3afe35f79a15"],
+Cell[CellGroupData[{
+Cell[2564, 78, 476, 11, 28, "Input",ExpressionUUID->"07613f8c-3296-449a-b614-070426401423"],
+Cell[3043, 91, 1221, 23, 28, "Message",ExpressionUUID->"7a9b48f3-3e38-4135-8547-cd600fffe1b2"],
+Cell[4267, 116, 1039, 26, 42, "Output",ExpressionUUID->"e6e3452e-ace8-4ef8-a581-e01c3b764d0d"]
+}, Open  ]],
+Cell[5321, 145, 340, 7, 38, "CodeText",ExpressionUUID->"d7296517-8a8c-4fc7-a782-a42af8c0e1d0"]
+}
+]
+*)
+
