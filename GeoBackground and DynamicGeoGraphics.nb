@@ -1,0 +1,272 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11048,        264]
+NotebookOptionsPosition[     10245,        242]
+NotebookOutlinePosition[     10649,        258]
+CellTagsIndexPosition[     10606,        255]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+DynamicGeoGraphics is not affected by vector backgrounds. I understand this \
+is due to the nature of vector graphics which take more time to render in \
+real time as the user moves the map around with the cursor. The top cell \
+should have a different background style than the bottom cell.\
+\>", "CodeText",
+ CellChangeTimes->{{3.862389456144712*^9, 
+  3.8623895148365498`*^9}},ExpressionUUID->"1338f04f-9fc1-4b9a-8cf5-\
+8ea8c0314772"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicGeoGraphics", "[", 
+  RowBox[{
+   RowBox[{"Tooltip", "[", 
+    RowBox[{
+     RowBox[{"GeoMarker", "[", "Here", "]"}], ",", 
+     "\"\<Huntington, West Virginia\>\""}], "]"}], ",", 
+   RowBox[{"GeoRange", "->", 
+    TemplateBox[{"5", "\"km\"", "kilometers", "\"Kilometers\""},
+     "Quantity"]}], ",", 
+   RowBox[{"ImageSize", "->", "Large"}], ",", 
+   RowBox[{"GeoBackground", "\[Rule]", "\"\<VectorWeb\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"e547be74-8f7d-4781-8807-082923ca2749"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Typeset`size$$ = Automatic, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`geoRange$$ = {{38.364956505725786`, 
+    38.45504314716186}, {-82.49724674144532, -82.38275325855471}}, 
+    Typeset`geoZoom$$ = 13, Typeset`geoProjection$$ = "Mercator", 
+    Typeset`geoImageSize$$ = {666.9728795305723, 669.733111918552}, 
+    Typeset`geoServer$$ = {
+    "Wolfram", "GeoModel" -> "Earth", "Projection" -> "Mercator", "Layer" -> 
+     "StreetMap"}, System`DynamicGeoGraphicsDump`extravars$$}, 
+    DynamicBox[DynamicGeoGraphics`DynamicGeoGraphicsBoxes[1, StandardForm, 
+      Dynamic[Typeset`geoRange$$], 
+      Dynamic[Typeset`geoImageSize$$], 
+      Dynamic[Typeset`geoZoom$$], 
+      Dynamic[Typeset`geoProjection$$], 
+      Dynamic[Typeset`geoServer$$], "Primitives" :> {{
+         Annotation[
+          Style[
+           
+           Polygon[{{-82.49724674144532, 
+            41.60197785520963}, {-82.49724674144532, 
+            41.71694516339267}, {-82.38275325855471, 
+            41.71694516339267}, {-82.38275325855471, 
+            41.60197785520963}, {-82.49724674144532, 41.60197785520963}}], 
+           Directive[
+            Opacity[0]]], "GeoBackground", "WolframGeoGraphics"], {{
+           Tooltip[
+            Inset[
+             Graphics[{
+               RGBColor[0.790588, 0.201176, 0.], 
+               Polygon[{{-0.4, 1.25}, {0, 0}, {0.4, 1.25}}], 
+               Rectangle[{-1, 1.25}, {1, 3.25}, RoundingRadius -> 0.6]}, 
+              PlotRangePadding -> None], {-82.44, 41.65944381538509}, {
+             Center, Bottom}, 
+             Offset[24]], "Huntington, West Virginia"]}, 
+          Annotation[{}, "GeoGridLines", "WolframGeoGraphics"]}}, 
+        Annotation[{}, "GeoScaleBar", "WolframGeoGraphics"]}, 
+      "GraphicsOptions" :> {Method -> {"OriginalInput" -> HoldForm[
+            DynamicGeoGraphics[
+             Tooltip[
+              GeoMarker[
+               GeoPosition[{38.410000000000004`, -82.44}]], 
+              "Huntington, West Virginia"], GeoRange -> 
+             Quantity[5, "Kilometers"], ImageSize -> Large, GeoBackground -> 
+             "VectorWeb"]], "OriginalInput" -> HoldForm[
+            DynamicGeoGraphics[
+             Tooltip[
+              GeoMarker[
+               GeoPosition[{38.410000000000004`, -82.44}]], 
+              "Huntington, West Virginia"], GeoRange -> 
+             Quantity[5, "Kilometers"], ImageSize -> Large, GeoBackground -> 
+             "VectorWeb"]], 
+          "BasicGeoRange" -> {{38.36495650572579, 
+           38.45504314716187}, {-82.49724674144532, -82.38275325855471}}}, 
+        CoordinatesToolOptions -> {
+         "DisplayFunction" -> (
+           GeoGraphics`GeoGridPositionDisplay[#, "Mercator", "ITRF00"]& ), 
+          "CopiedValueFunction" -> (
+           GeoGraphics`GeoGridPositionCopiedValue[#, "Mercator", 
+            "ITRF00"]& )}, 
+        PlotRange -> {{-82.49724674144532, -82.38275325855471}, {
+         41.60197785520963, 41.71694516339267}}, PlotRangePadding -> None, 
+        ImageSize -> Large, PlotRangeClipping -> True}, 
+      "GeoOptions" :> {
+       GeoBackground -> "StreetMap", GeoModel -> "Earth", GeoProjection -> 
+        "Mercator", GeoServer -> {Automatic}, GeoModel -> "ITRF00", 
+        GeoRange -> {{38.36495650572579, 
+         38.45504314716187}, {-82.49724674144532, -82.38275325855471}}, 
+        GeoZoomLevel -> Automatic}, 
+      If[
+       TrueQ[System`DynamicGeoGraphicsDump`singleevaluation], 
+       SingleEvaluation -> True, 
+       Unevaluated[
+        Sequence[]]]],
+     ImageSizeCache->{674.6526083258766, {336., 341.44044303774024`}}],
+    DynamicModuleValues:>{},
+    SynchronousInitialization->False,
+    UndoTrackedVariables:>{Typeset`show},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}],
+   Deployed->True,
+   StripOnInput->False],
+  DynamicGeoGraphics`InterpretDynamicGeoGraphics[1]]], "Output",
+ CellChangeTimes->{3.8623894326116924`*^9},
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"f967ffa6-d041-47db-a746-d616eb2aa782"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicGeoGraphics", "[", 
+  RowBox[{
+   RowBox[{"Tooltip", "[", 
+    RowBox[{
+     RowBox[{"GeoMarker", "[", "Here", "]"}], ",", 
+     "\"\<Huntington, West Virginia\>\""}], "]"}], ",", 
+   RowBox[{"GeoRange", "->", 
+    TemplateBox[{"5", "\"km\"", "kilometers", "\"Kilometers\""},
+     "Quantity"]}], ",", 
+   RowBox[{"ImageSize", "->", "Large"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.862389436267315*^9, 3.862389436689994*^9}},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"19fe3a1a-3e90-49ae-b2a5-edc1b1ea08e7"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Typeset`size$$ = Automatic, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`geoRange$$ = {{38.364956505725786`, 
+    38.45504314716186}, {-82.49724674144532, -82.38275325855471}}, 
+    Typeset`geoZoom$$ = 13, Typeset`geoProjection$$ = "Mercator", 
+    Typeset`geoImageSize$$ = {666.9728795305723, 669.733111918552}, 
+    Typeset`geoServer$$ = {
+    "Wolfram", "GeoModel" -> "Earth", "Projection" -> "Mercator", "Layer" -> 
+     "StreetMap"}, System`DynamicGeoGraphicsDump`extravars$$}, 
+    DynamicBox[DynamicGeoGraphics`DynamicGeoGraphicsBoxes[1, StandardForm, 
+      Dynamic[Typeset`geoRange$$], 
+      Dynamic[Typeset`geoImageSize$$], 
+      Dynamic[Typeset`geoZoom$$], 
+      Dynamic[Typeset`geoProjection$$], 
+      Dynamic[Typeset`geoServer$$], "Primitives" :> {{
+         Annotation[
+          Style[
+           
+           Polygon[{{-82.49724674144532, 
+            41.60197785520963}, {-82.49724674144532, 
+            41.71694516339267}, {-82.38275325855471, 
+            41.71694516339267}, {-82.38275325855471, 
+            41.60197785520963}, {-82.49724674144532, 41.60197785520963}}], 
+           Directive[
+            Opacity[0]]], "GeoBackground", "WolframGeoGraphics"], {{
+           Tooltip[
+            Inset[
+             Graphics[{
+               RGBColor[0.790588, 0.201176, 0.], 
+               Polygon[{{-0.4, 1.25}, {0, 0}, {0.4, 1.25}}], 
+               Rectangle[{-1, 1.25}, {1, 3.25}, RoundingRadius -> 0.6]}, 
+              PlotRangePadding -> None], {-82.44, 41.65944381538509}, {
+             Center, Bottom}, 
+             Offset[24]], "Huntington, West Virginia"]}, 
+          Annotation[{}, "GeoGridLines", "WolframGeoGraphics"]}}, 
+        Annotation[{}, "GeoScaleBar", "WolframGeoGraphics"]}, 
+      "GraphicsOptions" :> {Method -> {"OriginalInput" -> HoldForm[
+            DynamicGeoGraphics[
+             Tooltip[
+              GeoMarker[
+               GeoPosition[{38.410000000000004`, -82.44}]], 
+              "Huntington, West Virginia"], GeoRange -> 
+             Quantity[5, "Kilometers"], ImageSize -> Large]], "OriginalInput" -> 
+          HoldForm[
+            DynamicGeoGraphics[
+             Tooltip[
+              GeoMarker[
+               GeoPosition[{38.410000000000004`, -82.44}]], 
+              "Huntington, West Virginia"], GeoRange -> 
+             Quantity[5, "Kilometers"], ImageSize -> Large]], 
+          "BasicGeoRange" -> {{38.36495650572579, 
+           38.45504314716187}, {-82.49724674144532, -82.38275325855471}}}, 
+        CoordinatesToolOptions -> {
+         "DisplayFunction" -> (
+           GeoGraphics`GeoGridPositionDisplay[#, "Mercator", "ITRF00"]& ), 
+          "CopiedValueFunction" -> (
+           GeoGraphics`GeoGridPositionCopiedValue[#, "Mercator", 
+            "ITRF00"]& )}, 
+        PlotRange -> {{-82.49724674144532, -82.38275325855471}, {
+         41.60197785520963, 41.71694516339267}}, PlotRangePadding -> None, 
+        ImageSize -> Large, PlotRangeClipping -> True}, 
+      "GeoOptions" :> {
+       GeoBackground -> "StreetMap", GeoModel -> "Earth", GeoProjection -> 
+        "Mercator", GeoServer -> {Automatic}, GeoModel -> "ITRF00", 
+        GeoRange -> {{38.36495650572579, 
+         38.45504314716187}, {-82.49724674144532, -82.38275325855471}}, 
+        GeoZoomLevel -> Automatic}, 
+      If[
+       TrueQ[System`DynamicGeoGraphicsDump`singleevaluation], 
+       SingleEvaluation -> True, 
+       Unevaluated[
+        Sequence[]]]],
+     ImageSizeCache->{674.6526083258766, {336., 341.44044303774024`}}],
+    DynamicModuleValues:>{},
+    SynchronousInitialization->False,
+    UndoTrackedVariables:>{Typeset`show},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}],
+   Deployed->True,
+   StripOnInput->False],
+  DynamicGeoGraphics`InterpretDynamicGeoGraphics[1]]], "Output",
+ CellChangeTimes->{3.8623894372968326`*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"61822dff-6449-482e-856a-d53051d3b122"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c50e269c-c718-4a04-aa45-341247380d9a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 447, 8, 59, "CodeText",ExpressionUUID->"1338f04f-9fc1-4b9a-8cf5-8ea8c0314772"],
+Cell[CellGroupData[{
+Cell[1030, 32, 546, 14, 37, "Input",ExpressionUUID->"e547be74-8f7d-4781-8807-082923ca2749"],
+Cell[1579, 48, 4073, 86, 694, "Output",ExpressionUUID->"f967ffa6-d041-47db-a746-d616eb2aa782"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5689, 139, 541, 13, 37, "Input",ExpressionUUID->"19fe3a1a-3e90-49ae-b2a5-edc1b1ea08e7"],
+Cell[6233, 154, 3996, 85, 717, "Output",ExpressionUUID->"61822dff-6449-482e-856a-d53051d3b122"]
+}, Open  ]]
+}
+]
+*)
+
