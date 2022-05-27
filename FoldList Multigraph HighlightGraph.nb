@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     91317,       1919]
-NotebookOptionsPosition[     90072,       1888]
-NotebookOutlinePosition[     90553,       1906]
-CellTagsIndexPosition[     90510,       1903]
+NotebookDataLength[     91617,       1925]
+NotebookOptionsPosition[     90296,       1894]
+NotebookOutlinePosition[     90757,       1911]
+CellTagsIndexPosition[     90714,       1908]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1884,11 +1884,16 @@ Cell[BoxData[
   "\[RightAssociation]"}]], "Output",
  CellChangeTimes->{3.862647778222167*^9, 3.862647843720659*^9},
  CellLabel->"Out[16]=",ExpressionUUID->"db0e47ac-6ebd-412b-a238-71ecc73e2f01"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", "\"\<https://www.google.com/\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8626480185148983`*^9, 
+  3.862648031541685*^9}},ExpressionUUID->"9ad4e46b-5f21-4695-b4c8-\
+523943d021b6"]
 },
-WindowSize->{1083.6, 604.8},
-WindowMargins->{{
-  Automatic, -343.79999999999995`}, {-64.19999999999993, Automatic}},
+WindowSize->{592.8, 604.8},
+WindowMargins->{{26.4, Automatic}, {-41.39999999999998, Automatic}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (May 24, 2022)",
 StyleDefinitions->"Default.nb",
@@ -1915,12 +1920,13 @@ Cell[6828, 152, 67484, 1368, 681, "Output",ExpressionUUID->"579db796-6788-491d-9
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[74349, 1525, 226, 3, 28, "Input",ExpressionUUID->"8752ca3a-7b35-4b1e-b98b-0f52d26ad075"],
-Cell[74578, 1530, 4796, 104, 74, "Output",ExpressionUUID->"6151f062-a7ed-4613-aa0b-4735b72266ce"]
+Cell[74578, 1530, 4796, 104, 164, "Output",ExpressionUUID->"6151f062-a7ed-4613-aa0b-4735b72266ce"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[79411, 1639, 820, 17, 39, "Input",ExpressionUUID->"6c6de3dc-1e6c-4b66-83fc-1e7b7e183b79"],
-Cell[80234, 1658, 9822, 227, 198, "Output",ExpressionUUID->"db0e47ac-6ebd-412b-a238-71ecc73e2f01"]
-}, Open  ]]
+Cell[80234, 1658, 9822, 227, 441, "Output",ExpressionUUID->"db0e47ac-6ebd-412b-a238-71ecc73e2f01"]
+}, Open  ]],
+Cell[90071, 1888, 221, 4, 28, "Input",ExpressionUUID->"9ad4e46b-5f21-4695-b4c8-523943d021b6"]
 }
 ]
 *)
