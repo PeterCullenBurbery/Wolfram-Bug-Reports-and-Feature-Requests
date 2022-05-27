@@ -1,0 +1,83 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2412,         73]
+NotebookOptionsPosition[      1874,         57]
+NotebookOutlinePosition[      2278,         73]
+CellTagsIndexPosition[      2235,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"f", ";"}], "\[IndentingNewLine]", 
+ RowBox[{"g", ";"}]}], "Input",
+ CellChangeTimes->{{3.862585642878253*^9, 
+  3.8625856447972794`*^9}},ExpressionUUID->"031ff79b-1232-4568-911c-\
+67275b67e376"],
+
+Cell[BoxData[{"f", "\[IndentingNewLine]", "g", "\[IndentingNewLine]", 
+ RowBox[{"h", ";"}]}], "Input",
+ CellChangeTimes->{{3.862585661732297*^9, 
+  3.8625856672679996`*^9}},ExpressionUUID->"edff26bb-bbd4-4b39-9561-\
+475761cfe4af"],
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"Expression", 
+     RowBox[{"Times", "[", 
+       DynamicBox[
+        FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["64", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  $CellContext`f $CellContext`g $CellContext`h,
+  SelectWithContents->True,
+  Selectable->False]], "Input",
+ CellChangeTimes->{{3.8625856765864477`*^9, 
+  3.8625856807152042`*^9}},ExpressionUUID->"6e434149-2807-43af-a684-\
+ba5fba81ea5a"]
+},
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b7f6ab95-f73a-4d7a-8242-ec47c7a366ae"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 219, 5, 48, "Input",ExpressionUUID->"031ff79b-1232-4568-911c-67275b67e376"],
+Cell[780, 27, 230, 4, 67, "Input",ExpressionUUID->"edff26bb-bbd4-4b39-9561-475761cfe4af"],
+Cell[1013, 33, 857, 22, 36, "Input",ExpressionUUID->"6e434149-2807-43af-a684-ba5fba81ea5a"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
