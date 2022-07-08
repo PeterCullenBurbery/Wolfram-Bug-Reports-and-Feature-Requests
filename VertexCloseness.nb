@@ -1,0 +1,261 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9470,        253]
+NotebookOptionsPosition[      7721,        213]
+NotebookOutlinePosition[      8199,        231]
+CellTagsIndexPosition[      8156,        228]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"g", "=", 
+   RowBox[{"ExampleData", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<NetworkGraph\>\"", ",", "\"\<Friendship\>\""}], "}"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.862994320562473*^9, 3.8629943205634823`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"291e9b2d-ac1f-4c7b-8c31-2b3a51d1f44d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ClosenessCentrality", "[", "g", "]"}]], "Input",
+ CellChangeTimes->{{3.86299431499918*^9, 3.862994315000179*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"fcaf87e4-9e6d-41ac-bd28-1b804e60eff2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.8`", ",", "0.5333333333333333`", ",", "0.5714285714285714`", ",", 
+   "0.5333333333333333`", ",", "0.6153846153846154`", ",", "0.5`", ",", 
+   "0.5714285714285714`", ",", "0.47058823529411764`", ",", 
+   "0.4444444444444444`"}], "}"}]], "Output",
+ CellChangeTimes->{3.862994335823208*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"7f5a4a2e-8244-4f0e-88c5-f8614d03bdca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AssociationMap", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"GraphDistance", "[", 
+     RowBox[{"g", ",", "#"}], "]"}], "&"}], ",", 
+   RowBox[{"VertexList", "[", "g", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8629943440126085`*^9, 3.862994363271885*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"003fd2db-f68c-47ab-8e5b-5ed7c73032c6"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Anna\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", 
+      "2", ",", "2"}], "}"}]}], ",", 
+   RowBox[{"\<\"Rose\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "0", ",", "1", ",", "1", ",", "2", ",", "2", ",", "2", ",", 
+      "3", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\<\"Nora\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "1", ",", "0", ",", "2", ",", "1", ",", "2", ",", "2", ",", 
+      "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\<\"Ben\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "1", ",", "2", ",", "0", ",", "2", ",", "1", ",", "2", ",", 
+      "3", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\<\"Larry\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "2", ",", "1", ",", "2", ",", "0", ",", "2", ",", "2", ",", 
+      "1", ",", "2"}], "}"}]}], ",", 
+   RowBox[{"\<\"Carol\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "2", ",", "2", ",", "1", ",", "2", ",", "0", ",", "2", ",", 
+      "3", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\<\"Rudy\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "0", ",", 
+      "2", ",", "1"}], "}"}]}], ",", 
+   RowBox[{"\<\"Linda\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "2", ",", "3", ",", "2", ",", "3", ",", "1", ",", "3", ",", "2", ",", 
+      "0", ",", "1"}], "}"}]}], ",", 
+   RowBox[{"\<\"James\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "2", ",", "3", ",", "3", ",", "3", ",", "2", ",", "3", ",", "1", ",", 
+      "1", ",", "0"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8629943635174313`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"48704f24-5136-44d1-9f7d-d0b370a9900f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "@", 
+  RowBox[{"AssociationMap", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Length", "[", 
+       RowBox[{"DeleteCases", "[", 
+        RowBox[{
+         RowBox[{"GraphDistance", "[", 
+          RowBox[{"g", ",", "#"}], "]"}], ",", "0"}], "]"}], "]"}], "/", 
+      RowBox[{"Total", "[", 
+       RowBox[{"GraphDistance", "[", 
+        RowBox[{"g", ",", "#"}], "]"}], "]"}]}], "&"}], ",", 
+    RowBox[{"VertexList", "[", "g", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8629943440126085`*^9, 3.8629944140769653`*^9}, {
+  3.86299445991639*^9, 3.8629944742453384`*^9}, {3.8629948200494432`*^9, 
+  3.862994824257677*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"c9b9bc30-5314-4c53-a5c8-a56ada30beb8"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Anna\"\>", "\[Rule]", "0.8`"}], ",", 
+   RowBox[{"\<\"Rose\"\>", "\[Rule]", "0.5333333333333333`"}], ",", 
+   RowBox[{"\<\"Nora\"\>", "\[Rule]", "0.5714285714285714`"}], ",", 
+   RowBox[{"\<\"Ben\"\>", "\[Rule]", "0.5333333333333333`"}], ",", 
+   RowBox[{"\<\"Larry\"\>", "\[Rule]", "0.6153846153846154`"}], ",", 
+   RowBox[{"\<\"Carol\"\>", "\[Rule]", "0.5`"}], ",", 
+   RowBox[{"\<\"Rudy\"\>", "\[Rule]", "0.5714285714285714`"}], ",", 
+   RowBox[{"\<\"Linda\"\>", "\[Rule]", "0.47058823529411764`"}], ",", 
+   RowBox[{"\<\"James\"\>", "\[Rule]", "0.4444444444444444`"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.8629944073238645`*^9, 3.862994414331251*^9}, 
+   3.8629944747052326`*^9, 3.8629948247148514`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"b0af4735-ab9d-4535-a246-4e2bb19e861f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClosenessCentrality", "[", "g", "]"}], "==", 
+  RowBox[{"N", "@", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", 
+        RowBox[{"DeleteCases", "[", 
+         RowBox[{
+          RowBox[{"GraphDistance", "[", 
+           RowBox[{"g", ",", "#"}], "]"}], ",", "0"}], "]"}], "]"}], "/", 
+       RowBox[{"Total", "[", 
+        RowBox[{"GraphDistance", "[", 
+         RowBox[{"g", ",", "#"}], "]"}], "]"}]}], "&"}], ",", 
+     RowBox[{"VertexList", "[", "g", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8629943440126085`*^9, 3.8629944140769653`*^9}, {
+  3.86299445991639*^9, 3.8629944742453384`*^9}, {3.8629948200494432`*^9, 
+  3.862994824257677*^9}, {3.8629952400980186`*^9, 3.8629952490124655`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"4d99918a-5777-4e98-9e97-4d795e57a52c"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.862995243350182*^9, 3.862995249511109*^9}},
+ CellLabel->"Out[19]=",ExpressionUUID->"f8217c44-5d9c-4398-9b0f-d8dc0e12fb17"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexCloseness", "[", 
+  RowBox[{"g", ",", "\"\<Anna\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.862995733627635*^9, 3.862995737658073*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"016c9dd0-1907-42c9-8fd2-93d1bb6be72d"],
+
+Cell[BoxData["0.8`"], "Output",
+ CellChangeTimes->{{3.8629957379579153`*^9, 3.862995746383755*^9}},
+ CellLabel->"Out[23]=",ExpressionUUID->"48dc2bae-8104-470c-833b-f214b6c01cfa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClosenessCentrality", "[", "g", "]"}], "==", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"VertexCloseness", "[", 
+      RowBox[{"g", ",", "#"}], "]"}], "&"}], ",", 
+    RowBox[{"VertexList", "[", "g", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8629958179149275`*^9, 3.8629958249620075`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"2ce65c97-7677-48fc-b07d-f349a2d02dc0"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.8629958206641784`*^9, 3.8629958254459767`*^9}},
+ CellLabel->"Out[27]=",ExpressionUUID->"b1d89e55-8e55-4ab2-a420-424203af6d36"]
+}, Open  ]]
+},
+WindowSize->{1152., 615.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (May 30, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1be8e5e9-3b77-42e3-87d0-5d543f728a3b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 344, 8, 28, "Input",ExpressionUUID->"291e9b2d-ac1f-4c7b-8c31-2b3a51d1f44d"],
+Cell[CellGroupData[{
+Cell[927, 32, 215, 3, 28, "Input",ExpressionUUID->"fcaf87e4-9e6d-41ac-bd28-1b804e60eff2"],
+Cell[1145, 37, 411, 8, 32, "Output",ExpressionUUID->"7f5a4a2e-8244-4f0e-88c5-f8614d03bdca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1593, 50, 361, 8, 28, "Input",ExpressionUUID->"003fd2db-f68c-47ab-8e5b-5ed7c73032c6"],
+Cell[1957, 60, 1878, 49, 71, "Output",ExpressionUUID->"48704f24-5136-44d1-9f7d-d0b370a9900f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3872, 114, 746, 18, 28, "Input",ExpressionUUID->"c9b9bc30-5314-4c53-a5c8-a56ada30beb8"],
+Cell[4621, 134, 885, 15, 32, "Output",ExpressionUUID->"b0af4735-ab9d-4535-a246-4e2bb19e861f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5543, 154, 868, 20, 28, "Input",ExpressionUUID->"4d99918a-5777-4e98-9e97-4d795e57a52c"],
+Cell[6414, 176, 176, 2, 32, "Output",ExpressionUUID->"f8217c44-5d9c-4398-9b0f-d8dc0e12fb17"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6627, 183, 247, 4, 28, "Input",ExpressionUUID->"016c9dd0-1907-42c9-8fd2-93d1bb6be72d"],
+Cell[6877, 189, 178, 2, 32, "Output",ExpressionUUID->"48dc2bae-8104-470c-833b-f214b6c01cfa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7092, 196, 430, 10, 28, "Input",ExpressionUUID->"2ce65c97-7677-48fc-b07d-f349a2d02dc0"],
+Cell[7525, 208, 180, 2, 32, "Output",ExpressionUUID->"b1d89e55-8e55-4ab2-a420-424203af6d36"]
+}, Open  ]]
+}
+]
+*)
+

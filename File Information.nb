@@ -1,0 +1,258 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9422,        248]
+NotebookOptionsPosition[      7551,        208]
+NotebookOutlinePosition[      7957,        224]
+CellTagsIndexPosition[      7914,        221]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"guideNotebooks", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<C:\\\\Users\\\\Peter\\\\AppData\\\\Local\\\\Programs\\\\Common\\\\\
+Wolfram Research\\\\Documentation.en-us\\\\13.1\\\\Documentation\>\"", ",", 
+       "\"\<English\>\"", ",", "\"\<System\>\"", ",", "\"\<Guides\>\""}], 
+      "}"}], "//", "FileNameJoin"}], "//", 
+    RowBox[{
+     RowBox[{"FileNames", "[", 
+      RowBox[{"\"\<*.nb\>\"", ",", "#"}], "]"}], "&"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8630363750599747`*^9, 3.863036375060976*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"c7e8fada-8cf5-48f9-9abb-5b4a327fd70e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SystemInformation", "[", 
+   RowBox[{"\"\<FrontEnd\>\"", ",", "\"\<DocumentationInformation\>\""}], 
+   "]"}], "[", "\"\<Directory\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.863036312977579*^9, 3.863036312977579*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"68a6fe16-396d-4a77-98c8-264bf136f2e5"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\AppData\\\\Local\\\\Programs\\\\\
+Common\\\\Wolfram \
+Research\\\\Documentation.en-us\\\\13.1\\\\Documentation\"\>"], "Output",
+ CellChangeTimes->{3.8630363139067707`*^9, 3.8630363772929087`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"26e98fdb-e2e6-4888-9f04-33fc9089b4a8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"guideNotebooks", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"SystemInformation", "[", 
+          RowBox[{
+          "\"\<FrontEnd\>\"", ",", "\"\<DocumentationInformation\>\""}], 
+          "]"}], "[", "\"\<Directory\>\"", "]"}], ",", "\"\<English\>\"", 
+        ",", "\"\<System\>\"", ",", "\"\<Guides\>\""}], "}"}], "//", 
+      "FileNameJoin"}], "//", 
+     RowBox[{
+      RowBox[{"FileNames", "[", 
+       RowBox[{"\"\<*.nb\>\"", ",", "#"}], "]"}], "&"}]}]}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{"CopyFile", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"SystemInformation", "[", 
+        RowBox[{"\"\<FrontEnd\>\"", ",", "\"\<DocumentationInformation\>\""}],
+         "]"}], "[", "\"\<Directory\>\"", "]"}], ",", "\"\<English\>\"", ",", 
+      "\"\<System\>\"", ",", "\"\<Guides\>\"", ",", 
+      "\"\<GraphModifications.nb\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"myfile", "=", 
+    RowBox[{"FileNameJoin", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+       "\"\<MyGraphModifications.nb\>\""}], "}"}]}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.863036266596535*^9, 3.863036266596535*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"43cdc38e-3656-4486-b07c-2527e35dcded"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NotebookDirectory", "nosv", 
+   "\"The notebook \\!\\(\\*TemplateBox[Association[RuleDelayed[\\\"obj\\\", \
+NotebookObject[\\\"3dd5e928-2e88-42f3-bc2a-4d496ca410b5\\\", \
+\\\"fb953745-4832-4b81-9764-13d52374e0ac\\\"]], Rule[\\\"label\\\", \
+\\\"\\\\\\\"Untitled-1\\\\\\\"\\\"]], \\\"NotebookObjectUUIDsUnsaved\\\"]\\) \
+is not saved.\"", 2, 12, 4, 19420035755902944805, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8630362707738733`*^9, 3.8630363165443263`*^9, 
+  3.8630363785472517`*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"8316a500-e812-4f1d-80b6-f768d1573be9"],
+
+Cell[BoxData[
+ RowBox[{"CopyFile", "[", 
+  RowBox[{"\<\"C:\\\\Users\\\\peter\\\\AppData\\\\Local\\\\Programs\\\\Common\
+\\\\Wolfram \
+Research\\\\Documentation.en-us\\\\13.1\\\\Documentation\\\\English\\\\System\
+\\\\Guides\\\\GraphModifications.nb\"\>", ",", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"$Failed", ",", "\<\"MyGraphModifications.nb\"\>"}], "}"}], 
+    "]"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.863036270828866*^9, 3.863036316561307*^9, 
+  3.863036378566779*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"10453534-d11e-4fe9-8ad2-568568005d86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nb1", "=", 
+  RowBox[{"NotebookOpen", "[", "myfile", "]"}]}]], "Input",
+ CellChangeTimes->{{3.86303628013311*^9, 3.863036280134094*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"2c6f3e5d-9d5d-40c8-a20e-be5433cb99b9"],
+
+Cell[BoxData[
+ RowBox[{"NotebookOpen", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{"$Failed", ",", "\<\"MyGraphModifications.nb\"\>"}], "}"}], "]"}],
+   "]"}]], "Output",
+ CellChangeTimes->{3.8630362810768747`*^9, 3.8630363811248918`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"b4e699f2-d2a9-43e1-8722-ba212cb09d6c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", "nb1", "]"}]], "Input",
+ CellChangeTimes->{{3.8630362873418016`*^9, 3.863036287342783*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"e4b79f73-4e40-44bb-8020-35f3043b5eb9"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.8630362882717*^9, 3.8630363822236648`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"46611b80-9020-4ec2-988f-828c5b402383"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{"nb1", ",", 
+   RowBox[{"Saveable", "->", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.863036295322585*^9, 3.863036295323586*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"f402f317-7b12-419e-8a0a-6b5790acc5c4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetOptions", "sstm", 
+   "\"Argument \\!\\(\\*RowBox[{\\\"NotebookOpen\\\", \\\"[\\\", \
+RowBox[{\\\"FileNameJoin\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"$Failed\\\", \\\",\\\", \\\"\\\\\\\"MyGraphModifications.nb\\\\\\\
+\"\\\"}], \\\"}\\\"}], \\\"]\\\"}], \\\"]\\\"}]\\) is not a symbol or a \
+stream.\"", 2, 15, 5, 19420035755902944805, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8630362963196754`*^9, 3.8630363833680363`*^9},
+ CellLabel->
+  "During evaluation of \
+In[15]:=",ExpressionUUID->"ec9cfa73-323e-445a-8e6b-de27caf8f8e5"],
+
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{
+   RowBox[{"NotebookOpen", "[", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{"$Failed", ",", "\<\"MyGraphModifications.nb\"\>"}], "}"}], 
+     "]"}], "]"}], ",", 
+   RowBox[{"Saveable", "\[Rule]", "True"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8630362963376637`*^9, 3.8630363833791065`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"1011936a-bbc6-4a11-aa8d-f37e39a997c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["nb1"], "Input",
+ CellChangeTimes->{{3.863036404104181*^9, 3.863036404410505*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"a9f681f0-cc99-4170-a4c3-fc2f4bf5b588"],
+
+Cell[BoxData[
+ RowBox[{"NotebookOpen", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{"$Failed", ",", "\<\"MyGraphModifications.nb\"\>"}], "}"}], "]"}],
+   "]"}]], "Output",
+ CellChangeTimes->{3.863036404754681*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"4b30b696-d412-4b6a-8cd8-8edb8d2dbdf6"]
+}, Open  ]]
+},
+WindowSize->{571.8, 524.4},
+WindowMargins->{{284.4, Automatic}, {Automatic, 32.4}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (May 30, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3dd5e928-2e88-42f3-bc2a-4d496ca410b5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 659, 15, 105, "Input",ExpressionUUID->"c7e8fada-8cf5-48f9-9abb-5b4a327fd70e"],
+Cell[CellGroupData[{
+Cell[1242, 39, 333, 6, 48, "Input",ExpressionUUID->"68a6fe16-396d-4a77-98c8-264bf136f2e5"],
+Cell[1578, 47, 316, 4, 52, "Output",ExpressionUUID->"26e98fdb-e2e6-4888-9f04-33fc9089b4a8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1931, 56, 1414, 37, 257, "Input",ExpressionUUID->"43cdc38e-3656-4486-b07c-2527e35dcded"],
+Cell[3348, 95, 652, 13, 39, "Message",ExpressionUUID->"8316a500-e812-4f1d-80b6-f768d1573be9"],
+Cell[4003, 110, 584, 12, 90, "Output",ExpressionUUID->"10453534-d11e-4fe9-8ad2-568568005d86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4624, 127, 239, 4, 28, "Input",ExpressionUUID->"2c6f3e5d-9d5d-40c8-a20e-be5433cb99b9"],
+Cell[4866, 133, 340, 7, 32, "Output",ExpressionUUID->"b4e699f2-d2a9-43e1-8722-ba212cb09d6c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5243, 145, 209, 3, 28, "Input",ExpressionUUID->"e4b79f73-4e40-44bb-8020-35f3043b5eb9"],
+Cell[5455, 150, 188, 3, 32, "Output",ExpressionUUID->"46611b80-9020-4ec2-988f-828c5b402383"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5680, 158, 268, 5, 28, "Input",ExpressionUUID->"f402f317-7b12-419e-8a0a-6b5790acc5c4"],
+Cell[5951, 165, 603, 12, 46, "Message",ExpressionUUID->"ec9cfa73-323e-445a-8e6b-de27caf8f8e5"],
+Cell[6557, 179, 450, 10, 71, "Output",ExpressionUUID->"1011936a-bbc6-4a11-aa8d-f37e39a997c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7044, 194, 174, 2, 28, "Input",ExpressionUUID->"a9f681f0-cc99-4170-a4c3-fc2f4bf5b588"],
+Cell[7221, 198, 314, 7, 32, "Output",ExpressionUUID->"4b30b696-d412-4b6a-8cd8-8edb8d2dbdf6"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
